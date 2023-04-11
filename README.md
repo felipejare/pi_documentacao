@@ -64,11 +64,193 @@ Cada mesa terá acesso ao nosso sistema onde ele poderá personalizar o seu pedi
 
 ## Regra de negócio de Papa's Burgeria
 
-- **RN01 - Fazendo pedido:** Para o cliente fazer seu pedido ele terá que escanear seu QR code e utilizar o usuário visitante que lhe dará um ID para fazer o pedido ou criar o seu próprio usuário.
-<!-- - não esquecer de transformar a rn01 em dois, por conta de cliente visitante e cliente usuario cadastrado e cada diferença de cada um -->
-- **RN02 - Criação de Comanda:** O cliente poderá fazer o pedido pela comanda digital ou chamar um atendente. Caso ele peça algo, a comanda irá para a cozinha.
-- **RN03 - Modificações de um Prato:** Caso um prato seja pedido e tenha modificações (quaisquer que sejam elas) o cozinheiro terá de fazer a modificação.
-- **RN04 - Pagamento:** Para poder efetuar o pagamento terá de ser apresentado no caixa o número de identificação (ID) e assim o atendente terá acesso a comanda criada para o cliente e todo o seu pedido com o valor da conta.
-- **RN05 - Registro Administrativo:** Uma pessoa terá uma conta administrativa que poderá administrar o estoque, lucro, funcionários e o registro de compras.
-- **RN06 - Entrega de Pedido:** Assim que o cozinheiro terminar de preparar o pedido, ele deverá marcar como pedido pronto e assim, o garçom levará o pedido para a mesa.
+- **RN01 - Usuário visitante:** O cliente que está entrando no estabelecimento e não optar por criar uma conta no sistema, ele entrerá como um usuário visitante e terá seu ID de visitante.
+- **RN02 - Usuário cadastrante:** O cliente ques está entrando no estabelecimento e optar por criar um cadastro, ele terá seu ID próprio, e tera alguns recursos a mais, como exemplo: histórico de compras, cupons de desconto e tela de perfil.
+- **RN03 - Criação de Comanda:** O cliente poderá fazer o pedido pela comanda digital ou chamar um atendente. Caso ele peça algo, a comanda irá para a cozinha.
+- **RN04 - Modificações de um Prato:** Caso um prato seja pedido e tenha modificações (quaisquer que sejam elas) o cozinheiro terá de fazer a modificação.
+- **RN05 - Pagamento:** Para poder efetuar o pagamento terá de ser apresentado no caixa o número de identificação (ID) e assim o atendente terá acesso a comanda criada para o cliente e todo o seu pedido com o valor da conta.
+- **RN06 - Registro Administrativo:** Uma pessoa terá uma conta administrativa que poderá administrar o estoque, lucro, funcionários e o registro de compras.
+- **RN07 - Entrega de Pedido:** Assim que o cozinheiro terminar de preparar o pedido, ele deverá marcar como pedido pronto e assim, o garçom levará o pedido para a mesa.
+
+# 5. Requisitos funcionais
+(*Nessa parte a equipe deve descrever os requisitos funcionais que serão implementados no sistema. O texto abaixo descreve o que essa etapa deve conter e pode ser apagado depois.*)
+
+## 5.1 O que são requisitos funcionais?**
+
+Um requisito funcional é uma declaração de como um sistema deve se comportar. Define o que o sistema deve fazer para atender às necessidades ou expectativas do usuário. Os requisitos funcionais podem ser pensados ​como recursos que o usuário detecta.
+
+Os requisitos funcionais são compostos de duas partes:
+**função** e **comportamento**. 
+
+- A **função** é o que o sistema **faz**. Por exemplo: *“calcular imposto sobre vendas”*.
+- O **comportamento** é **como** o sistema faz. Por exemplo: *“O sistema deve calcular o imposto sobre vendas multiplicando o preço de compra pela alíquota do imposto.”*.
+
+## 5.2 Tipos de requisitos funcionais
+
+Os requisitos funcionais podem ser classificados em:
+
+- Regulamentos de Negócios
+- Requisitos de Certificação
+- Requisitos de relatório
+- Funções Administrativas
+- Níveis de autorização
+- Rastreamento de auditoria
+- Interfaces Externas
+- Gestão de dados
+- Requisitos Legais e Regulamentares
+
+## 5.3 Diretrizes para a elaboração de requisitos funcionais
+
+Cada requisito funcional precisa ser:
+
+- **Específico** sobre o que o sistema deve fazer.
+- **Mensurável** para que você possa dizer se o sistema está fazendo isso
+- **Alcançável** dentro do prazo que você definiu
+- **Relevante** para seus objetivos de negócios
+- **Limitado** no tempo para que você possa
+acompanhar o progresso
+
+## 5.4 Estrutura do requisito funcional
+
+Um requisito funcional deve ser estruturado da seguinte forma:
+
+- **Nome do requisito funcional:** descrição do
+requisito. 
+  - **Dados necessários:** dado 1, dado 2, dado 3.
+  - **Usuários:** todos os níveis de usuário.
+
+### 5.4.1 Nome do requisito funcional
+
+**R.F. 99 - Nome do requisito funcional:** é o nome da função que o software terá. Sugerimos, por padronização, que tenha o prefixo R.F. (requisito funcional)
+seguida da numeração, para melhor identificação do requisito, acrescido do formato *“Substantivo + onde será feita a ação”*.
+Por exemplo: 
+- R.F. 01 - Registro de Funcionários
+- R.F. 15 - Gerenciamento de consultas
+- R.F. 04 - Débito em conta corrente
+ 
+Deixe para definir as numerações ao final, tendo em vista que mudanças podem acontecer e não é prático sempre ficar reajustando os números.
+
+### 5.4.2 Descrição do requisito funcional
+
+**Descrição do requisito:** local para descrever a função deste requisito. 
+
+Sempre se preocupe em esclarecer dois pontos: o que o requisito faz e o motivo de sua existência. Isso é especialmente importante se a ação executada nesse requisito não for algo que já acontece naturalmente na empresa.
+Um exemplo é um Registro de funcionários, que talvez não exista hoje mas para o software é necessário para viabilizar uma autenticação de
+usuários. Outro exemplo é algo que faz sentido apenas para um  software, como a própria autenticação.
+
+
+### 5.4.3 Dados necessários
+
+**Dados necessários:** aqui devem ser colocados os nomes dos dados que serão usados para que esse requisito atenda o que precisa fazer. 
+
+Nas **entradas** e **processos**, em geral, são os dados que serão salvos (seja algo digitado pelo usuário ou captado do sistema, como a hora atual). 
+
+Já nas **saídas**, são os dados que serão exibidos em tela (sejam eles vindos diretamente do banco, ou criados por um cálculo ou busca na sessão do usuário).
+
+### 5.4.4 Usuários
+
+**Usuários:** aqui devem ser colocados os nomes dos usuários que terão acesso a esse requisito, conforme enumerados na descrição do sistema.
+
+### 5.4.5 Exemplo de requisito funcional
+
+- **R.F. 01 - Autenticação de usuário:** tem como propósito autenticar o acesso ao sistema, verificando se o usuário pode acessá-lo e, caso possa, o direcionando
+para a página principal de seu perfil de acesso. 
+  - **Dados necessários:** login, senha, nível de permissão. 
+  - **Usuários:** todos os níveis de usuário.
+
+### 5.4.6 Organização dos requisitos funcionais
+
+As funcionalidades devem ser organizadas em: entradas, processos e saídas.
+
+**Entradas:** São as funcionalidades que alimentarão o software com as informações essenciais para seu uso. 
+ 
+**Exemplos de entradas:**
+- “**Registro de usuário**” (para permitir depois seu acesso ao software).
+- “**Registro de paciente**” (que seria útil caso nosso software fosse ppara uma clínica, evitando registrar várias vezes os mesmos dados da pessoa a cada consulta e viabilizando um histórico de seus
+atendimentos).
+
+**Processos:** Em geral, englobam toda ação que executa cálculos, processamentos de tomada de decisão ou transforma dados em novos dados. 
+
+**Exemplos de processos:**
+- “**Autenticação de usuário**”, que usará os dados de “**Registro de usuário**” em sua execução.
+- “**Agendamento de consulta**”, que usará dados do “**Registro de paciente**” e talvez do “**Registro de funcionário**” em sua execução.
+
+**Saídas:** São os relatórios, gráficos, impressões, etc., que utilizarem os dados do software para gerar informações pertinentes ao
+negócio, mas sem intenção de alterá-los, apenas permitindo sua visualização e filtragem. 
+
+**Exemplos de saídas:**
+- “Relatório de consultas por paciente”.
+- Relatório de vendas”. 
+- “Log de usuários autenticados”.
+
+Todos esses podem ser consideradas saídas, pois usam informações de entradas e processos de modo a mostrar informações relevantes ao
+negócio. Lembre-se que, diferentemente das entradas e processos, aqui os dados necessários devem ser os que a tela exibirá.
+
+### 5.4.7 Exemplo de organização dos requisitos funcionais
+
+(_A seguir, um exemplo de organização de requisitos funcionais, com entradas, processos e saídas._)
+
+**Entradas:**
+
+- **R.F. 01 - Nome do requisito funcional:** descrição do requisito. 
+  - **Dados necessários:** dado 1, dado 2, dado 3.
+  - **Usuários:** todos os níveis de usuário.
+
+- **R.F. 02 - Nome do requisito funcional:** descrição do requisito. 
+  - **Dados necessários:** dado 1, dado 2, dado 3.
+  - **Usuários:** todos os níveis de usuário.
+
+**Processamento:**
+
+- **R.F. 03 - Nome do requisito funcional:** descrição do requisito. 
+  - **Dados necessários:** dado 1, dado 2, dado 3.
+  - **Usuários:** todos os níveis de usuário.
+
+- **R.F. 04 - Nome do requisito funcional:** descrição do requisito. 
+  - **Dados necessários:** dado 1, dado 2, dado 3.
+  - **Usuários:** todos os níveis de usuário.
+
+**Saídas:**
+
+- **R.F. 05 - Nome do requisito funcional:** descrição do requisito. 
+  - **Dados necessários:** dado 1, dado 2, dado 3.
+  - **Usuários:** todos os níveis de usuário.
+
+- **R.F. 06 - Nome do requisito funcional:** descrição do requisito. 
+  - **Dados necessários:** dado 1, dado 2, dado 3.
+  - **Usuários:** todos os níveis de usuário.
+
+#
+
+## Requisitos Funcionais
+
+**Entradas:**
+
+- **R.F. 01 - Sistema de Cliente Visitante:** O sistema deve ter um usuário visitante para clientes onde ele poderá emitir sua comanda e fazer seu pedido.
+  - **Dados necessários:** NúmeRo de identificação, 
+  - **Usuários:** Cliente.
+
+- **R.F. 02 - Sistema de Cliente Cadastrado:** O sistema deverá permitir que o cliente possa se cadastrar e ter acesso a seu histórico de compra, seu perfil e seus cupons. 
+  - **Dados necessários:** NúmeRo de identificação, login/email, senha.
+  - **Usuários:** Cliente.
+
+**Processamento:**
+
+- **R.F. 03 - Nome do requisito funcional:** descrição do requisito. 
+  - **Dados necessários:** dado 1, dado 2, dado 3.
+  - **Usuários:** todos os níveis de usuário.
+
+- **R.F. 04 - Nome do requisito funcional:** descrição do requisito. 
+  - **Dados necessários:** dado 1, dado 2, dado 3.
+  - **Usuários:** todos os níveis de usuário.
+
+**Saídas:**
+
+- **R.F. 05 - Nome do requisito funcional:** descrição do requisito. 
+  - **Dados necessários:** dado 1, dado 2, dado 3.
+  - **Usuários:** todos os níveis de usuário.
+
+- **R.F. 06 - Nome do requisito funcional:** descrição do requisito. 
+  - **Dados necessários:** dado 1, dado 2, dado 3.
+  - **Usuários:** todos os níveis de usuário.
 
