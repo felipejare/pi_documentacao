@@ -82,29 +82,29 @@ Cada mesa terá acesso ao nosso sistema onde ele poderá personalizar o seu pedi
   - **Usuários:** Cliente.
 
 - **R.F. 02 - Registro de Funcionario:** O sistema deve ter um sistema de cadastro de funcionários e diferentes niveis para cada funcionário. 
-  - **Dados necessários:**  login/email, senha,nivel de permissão.
-  - **Usuários:** Funcionário.
+  - **Dados necessários:**  login/email, senha, nivel de permissão.
+  - **Usuários:** Gerente.
 
 **Processamento:**
 
   - **R.F. 03 - Sistema de Comandas:** O sistema deverá emitir uma comanda online em tempo real para o cliente, que ele poderá adicionar mais itens a sua comanda. 
     - **Dados necessários:** NúmeRo de identificação, produto, quantidade;
-    - **Usuários:** Cliente/funcionarios
+    - **Usuários:** Cliente/Caixa
 
 - **R.F. 04 - Pagamento de comanda:** O sistema deverá apresentar a comanda para o caixa e para a cozinha de maneira rápida e online. 
   - **Dados necessários:** NúmeRo de identificação, login, senha.
-  - **Usuários:** Funcionários.
+  - **Usuários:** Cozinha/Caixa.
   
 
 **Saídas:**
 
 - **R.F. 05 - Relátorios de vendas:** O sistema deverá emitir um relatório semanal e um mensal para o gerente de lucro e prejuizos de venda. 
   - **Dados necessários:** NúmeRo de identificação, data inicial, data final;
-  - **Usuários:** Funcionários.
+  - **Usuários:** Gerente.
 
 - **R.F. 06 - Relatório de Estoque:** O sistema deverá emitir um relatório da quantidade de produtos utilizados no dia e o quanto ainda tem em estoque. 
   - **Dados necessários:** Produto, data inicial, data final;
-  - **Usuários:** Funcionários.
+  - **Usuários:** Gerente.
 
 
 
